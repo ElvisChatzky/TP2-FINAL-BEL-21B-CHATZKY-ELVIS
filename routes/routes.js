@@ -4,11 +4,12 @@ import Controller from "../controller/Controller.js";
 const routes = Router();
 const controller = new Controller();
 
-routes.post("/", controller.ingresarPalabraService);
-routes.get("/");
-routes.get("/all");
-routes.get("/:cantidad");
-routes.delete("/");
+routes.post("/", controller.ingresarPalabra);
+routes.get("/", controller.listarPalabras);
+routes.delete("/:palabra", controller.borrarPalabras);
+routes.get("/all",);
+routes.get("/:cantidad", controller.allApiPalabras);
+
 
 
 
