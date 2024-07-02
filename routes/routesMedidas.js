@@ -6,6 +6,7 @@ const controlador = new ControladorMedidas();
 
 routesMedidas.post('/sondas', controlador.agregarMedida);
 routesMedidas.get('/sondas', controlador.obtenerTodasLasMedidas);
+routesMedidas.get('/sondas/estadisticas', controlador.obtenerEstadisticas);
 routesMedidas.get('/sondas/:id', controlador.obtenerMedidasPorId);
 
 export default routesMedidas;
